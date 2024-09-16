@@ -1,7 +1,7 @@
 "use client";
 
-// biome-ignore lint/suspicious/noExplicitAny: 🤷🏻‍♂️
-export default function PlainButton({ onClick }: { onClick: any }) {
+// @ts-ignore
+export default function PlainButton({ onClick }) {
 	return (
 		<button
 			className="border border-zinc-300 rounded-md p-2"
