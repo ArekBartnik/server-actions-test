@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import PlainButton from "@/components/ui/plain-button";
 import {
 	Table,
 	TableBody,
@@ -29,9 +30,10 @@ export default async function Home() {
 		<main className="container mx-auto max-w-screen-md flex flex-col gap-8 items-center p-8">
 			<div className="flex gap-8">
 				<form action={addUser}>
-					<Button type="submit">Click me (form)</Button>
+					<Button type="submit">Button inside form</Button>
 				</form>
-				<Button onClick={addUser}>Click me (onClick)</Button>
+				<Button onClick={addUser}>Button with onClick</Button>
+				<PlainButton onClick={addUser}>Button with onClick</PlainButton>
 			</div>
 
 			<Table>
